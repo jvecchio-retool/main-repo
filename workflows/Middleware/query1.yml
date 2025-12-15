@@ -1,11 +1,14 @@
-id: runFunction1
+id: query1
 type: datasource
-subtype: JavascriptQuery
-resourceName: JavascriptQuery
+subtype: RESTQuery
+resourceName: 3721d007-357f-41d7-a36a-72cf9bb2dbf6
+resourceDisplayName: httpbun.com
 template:
   queryRefreshTime: ''
+  paginationLimit: ''
   allowedGroupIds: []
   streamResponse: false
+  body: ''
   lastReceivedFromResourceAt: null
   isFunction: false
   functionParameters: null
@@ -18,10 +21,13 @@ template:
   playgroundQuerySaveId: latest
   workflowParams: null
   resourceNameOverride: ''
-  runWhenModelUpdates: false
+  runWhenModelUpdates: true
+  paginationPaginationField: ''
   workflowRunExecutionType: sync
+  headers: ''
   showFailureToaster: true
-  query: return null
+  paginationEnabled: false
+  query: ''
   playgroundQueryUuid: ''
   playgroundQueryId: null
   error: null
@@ -31,13 +37,12 @@ template:
   runWhenPageLoadsDelay: ''
   data: null
   importedQueryInputs: {}
-  _additionalScope: []
   isImported: false
   showSuccessToaster: true
   cacheKeyTtl: ''
   requestSentTimestamp: null
+  cookies: ''
   metadata: null
-  editorMode: sql
   queryRunTime: null
   changesetObject: ''
   offlineOptimisticResponse: null
@@ -52,37 +57,38 @@ template:
   watchedParams: []
   enableErrorTransformer: false
   showLatestVersionUpdatedWarning: false
+  paginationDataField: ''
   timestamp: 0
   evalType: script
   importedQueryDefaults: {}
   enableTransformer: false
   showUpdateSetValueDynamicallyToggle: true
+  version: 2
   overrideOrgCacheForUserCache: false
   runWhenPageLoads: false
   transformer: return data
   events: []
-  queryTimeout: '120000'
+  queryTimeout: '10000'
   workflowId: null
   requireConfirmation: false
+  type: GET
   queryFailureConditions: ''
   changesetIsObject: false
   enableCaching: false
   allowedGroups: []
+  bodyType: none
   offlineQueryType: None
   queryThrottleTime: '750'
   updateSetValueDynamically: false
   notificationDuration: ''
-createdAt: 2025-12-09T22:30:10.997Z
+createdAt: 2025-12-15T16:28:52.820Z
 blockData:
-  top: -160
-  left: 512
-  uuid: d0ff415a-1b94-4638-976a-b7089701c420
-  options:
-    parameters: {}
-  pluginId: runFunction1
-  blockType: runFunction
-  editorType: JavascriptQuery
-  isMinimized: false
-  resourceName: JavascriptQuery
-  incomingPorts: []
-  incomingOnSuccessEdges: []
+  top: 48
+  left: 560
+  uuid: 255b2c28-f8b0-460f-a8f3-86de7392d7fc
+  pluginId: query1
+  blockType: default
+  editorType: RESTQuery
+  resourceName: 3721d007-357f-41d7-a36a-72cf9bb2dbf6
+  incomingOnSuccessEdges:
+    - a0b4ed67-8dae-4628-ba76-ee0bce5d053f

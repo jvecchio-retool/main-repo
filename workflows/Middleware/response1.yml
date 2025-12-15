@@ -1,4 +1,4 @@
-id: startTrigger
+id: response1
 type: datasource
 subtype: JavascriptQuery
 resourceName: JavascriptQuery
@@ -21,39 +21,28 @@ template:
   runWhenModelUpdates: false
   workflowRunExecutionType: sync
   showFailureToaster: true
-  query: |2-
-
-      const evalStartTriggerBlock = () => {
-        const getExampleInputJSON = () => {
+  query: |-
+    const generateReturn = () => {
+        const status = () => {
           try {
-            return {
-    "number": "2398252"
+            return 200
+          } catch {
+            return 200
+          }
+        }
+      const body = () => {
+        try {
+          return {
+      "returncode": 200,
+      "status": "success"
     }
-          } catch {
-            return { error: true, message: 'Error parsing example input JSON' }
-          }
-        }
-        const getExamplePathParams = () => {
-          try {
-            return {}
-          } catch {
-            return { error: true, message: 'Error parsing example path params' }
-          }
-        }
-        const getExampleHeaders = () => {
-          try {
-            return {}
-          } catch {
-            return { error: true, message: 'Error parsing example headers' }
-          }
-        }
-        return {
-          _retool_exampleInputJSON: getExampleInputJSON(),
-          _retool_exampleHeaders: getExampleHeaders(),
-          _retool_examplePathParams: getExamplePathParams(),
+        } catch {
+          return {'error': true, 'message': 'There was a problem parsing the JSON body of response1'}
         }
       }
-      return evalStartTriggerBlock()
+      return {status: status(), body: body() }
+      }
+      return generateReturn()
       
   playgroundQueryUuid: ''
   playgroundQueryId: null
@@ -70,6 +59,7 @@ template:
   cacheKeyTtl: ''
   requestSentTimestamp: null
   metadata: null
+  editorMode: sql
   queryRunTime: null
   changesetObject: ''
   offlineOptimisticResponse: null
@@ -104,15 +94,23 @@ template:
   queryThrottleTime: '750'
   updateSetValueDynamically: false
   notificationDuration: ''
-createdAt: 2025-12-09T00:12:31.679Z
+createdAt: 2025-12-13T00:09:14.935Z
 blockData:
-  top: 48
-  left: 48
-  uuid: a0b4ed67-8dae-4628-ba76-ee0bce5d053f
-  options: {}
-  pluginId: startTrigger
-  blockType: webhook
+  top: -256
+  left: 1280
+  uuid: ff3bba6c-636a-4477-8b94-29643ecf0460
+  options:
+    body: |-
+      {
+        "returncode": 200,
+        "status": "success"
+      }
+    status: '200'
+  pluginId: response1
+  blockType: webhookReturn
   editorType: JavascriptQuery
   isMinimized: false
   resourceName: JavascriptQuery
+  incomingPorts: []
+  failureCondition: 'true'
   incomingOnSuccessEdges: []

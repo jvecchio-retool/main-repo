@@ -120,8 +120,11 @@ triggerWebhooks:
             properties:
               array: []
         useHeaderApiKey: false
-        exampleInputJSON: ''
-        examplePathParams: ''
+        exampleInputJSON: |-
+          {
+          "number": "2398252"
+          }
+        examplePathParams: '{}'
 version: 43.0.9
 workflowId: fd0a4c2a-1274-4156-8f8f-e8bd783c87e1
 description: null

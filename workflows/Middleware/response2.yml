@@ -1,4 +1,4 @@
-id: code1
+id: response2
 type: datasource
 subtype: JavascriptQuery
 resourceName: JavascriptQuery
@@ -18,10 +18,32 @@ template:
   playgroundQuerySaveId: latest
   workflowParams: null
   resourceNameOverride: ''
-  runWhenModelUpdates: true
+  runWhenModelUpdates: false
   workflowRunExecutionType: sync
   showFailureToaster: true
-  query: return startTrigger.data
+  query: |-
+    const generateReturn = () => {
+        const status = () => {
+          try {
+            return 500
+          } catch {
+            return 200
+          }
+        }
+      const body = () => {
+        try {
+          return {
+      "returncode": 500,
+      "status": "failure"
+    }
+        } catch {
+          return {'error': true, 'message': 'There was a problem parsing the JSON body of response2'}
+        }
+      }
+      return {status: status(), body: body() }
+      }
+      return generateReturn()
+      
   playgroundQueryUuid: ''
   playgroundQueryId: null
   error: null
@@ -61,7 +83,7 @@ template:
   runWhenPageLoads: false
   transformer: return data
   events: []
-  queryTimeout: '120000'
+  queryTimeout: '10000'
   workflowId: null
   requireConfirmation: false
   queryFailureConditions: ''
@@ -72,17 +94,23 @@ template:
   queryThrottleTime: '750'
   updateSetValueDynamically: false
   notificationDuration: ''
-createdAt: 2025-12-09T00:12:31.680Z
+createdAt: 2025-12-13T00:09:47.990Z
 blockData:
-  top: 48
-  left: 480
-  uuid: cc9c3e2c-a30d-419e-b16d-a4ba2ed0916c
-  pluginId: code1
-  blockType: code
-  dimensions:
-    width: 400
-    height: 280
+  top: 192
+  left: 1280
+  uuid: 860ca6c4-8dc2-426b-83cd-4016565a7378
+  options:
+    body: |-
+      {
+        "returncode": 500,
+        "status": "failure"
+      }
+    status: '500'
+  pluginId: response2
+  blockType: webhookReturn
   editorType: JavascriptQuery
+  isMinimized: false
   resourceName: JavascriptQuery
-  incomingOnSuccessEdges:
-    - a0b4ed67-8dae-4628-ba76-ee0bce5d053f
+  incomingPorts: []
+  failureCondition: 'true'
+  incomingOnSuccessEdges: []
