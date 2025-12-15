@@ -1,16 +1,16 @@
-id: query1
+id: queryUpdateDB
 type: datasource
-subtype: RESTQuery
-resourceName: 3721d007-357f-41d7-a36a-72cf9bb2dbf6
-resourceDisplayName: httpbun.com
+subtype: SqlQueryUnified
+resourceName: 3b39cc6e-d82d-48d8-818f-5433148daed9
+resourceDisplayName: retool_db
 template:
   queryRefreshTime: ''
-  paginationLimit: ''
   allowedGroupIds: []
   streamResponse: false
-  body: ''
+  records: ''
   lastReceivedFromResourceAt: null
   isFunction: false
+  databasePasswordOverride: ''
   functionParameters: null
   queryDisabledMessage: ''
   servedFromCache: false
@@ -21,12 +21,9 @@ template:
   playgroundQuerySaveId: latest
   workflowParams: null
   resourceNameOverride: ''
-  runWhenModelUpdates: true
-  paginationPaginationField: ''
+  runWhenModelUpdates: false
   workflowRunExecutionType: sync
-  headers: ''
   showFailureToaster: true
-  paginationEnabled: false
   query: ''
   playgroundQueryUuid: ''
   playgroundQueryId: null
@@ -36,59 +33,74 @@ template:
   queryRunOnSelectorUpdate: false
   runWhenPageLoadsDelay: ''
   data: null
+  recordId: ''
   importedQueryInputs: {}
+  _additionalScope: []
   isImported: false
   showSuccessToaster: true
+  dataArray: []
   cacheKeyTtl: ''
+  filterBy: ''
   requestSentTimestamp: null
-  cookies: ''
+  databaseHostOverride: ''
   metadata: null
+  editorMode: gui
   queryRunTime: null
-  changesetObject: ''
+  actionType: INSERT
+  changesetObject: '{{ startTrigger.data }}'
+  shouldUseLegacySql: false
   offlineOptimisticResponse: null
   errorTransformer: return data.error
   finished: null
+  databaseNameOverride: ''
   confirmationMessage: null
   isFetching: false
-  changeset: ''
+  changeset: '[{"key":"story_generated","value":"\"true\""}]'
   rawData: null
   queryTriggerDelay: '0'
   resourceTypeOverride: null
   watchedParams: []
   enableErrorTransformer: false
+  databaseWarehouseOverride: ''
+  enableBulkUpdates: false
   showLatestVersionUpdatedWarning: false
-  paginationDataField: ''
   timestamp: 0
   evalType: script
   importedQueryDefaults: {}
   enableTransformer: false
   showUpdateSetValueDynamicallyToggle: true
-  version: 2
   overrideOrgCacheForUserCache: false
+  bulkUpdatePrimaryKey: ''
   runWhenPageLoads: false
   transformer: return data
   events: []
+  tableName: workflow_results
   queryTimeout: '10000'
   workflowId: null
   requireConfirmation: false
-  type: GET
   queryFailureConditions: ''
-  changesetIsObject: false
+  changesetIsObject: true
   enableCaching: false
   allowedGroups: []
-  bodyType: none
+  databaseUsernameOverride: ''
+  databaseRoleOverride: ''
+  shouldEnableBatchQuerying: false
+  doNotThrowOnNoOp: false
   offlineQueryType: None
   queryThrottleTime: '750'
   updateSetValueDynamically: false
   notificationDuration: ''
 createdAt: 2025-12-15T16:28:52.820Z
 blockData:
-  top: 48
-  left: 560
+  top: 16
+  left: 576
   uuid: 255b2c28-f8b0-460f-a8f3-86de7392d7fc
-  pluginId: query1
+  pluginId: queryUpdateDB
   blockType: default
-  editorType: RESTQuery
-  resourceName: 3721d007-357f-41d7-a36a-72cf9bb2dbf6
+  dimensions:
+    width: 432
+    height: 352
+  editorType: SqlQueryUnified
+  resourceName: 3b39cc6e-d82d-48d8-818f-5433148daed9
   incomingOnSuccessEdges:
     - a0b4ed67-8dae-4628-ba76-ee0bce5d053f
