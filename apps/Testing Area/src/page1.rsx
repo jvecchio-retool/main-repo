@@ -22,5 +22,17 @@
       value="👋 **Hello {{ current_user.firstName || 'friend' }}!**"
       verticalAlign="center"
     />
+    <Button id="button1" text="Button">
+      <Event
+        id="d36332cc"
+        event="click"
+        method="trigger"
+        params={{}}
+        pluginId="queryREST"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
   </Frame>
 </Screen>
