@@ -1,4 +1,4 @@
-id: startTrigger
+id: code2
 type: datasource
 subtype: JavascriptQuery
 resourceName: JavascriptQuery
@@ -21,7 +21,7 @@ template:
   runWhenModelUpdates: false
   workflowRunExecutionType: sync
   showFailureToaster: true
-  query: return null
+  query: 'return { id: 1, firstName: "Jane" }'
   playgroundQueryUuid: ''
   playgroundQueryId: null
   error: null
@@ -71,15 +71,13 @@ template:
   queryThrottleTime: '750'
   updateSetValueDynamically: false
   notificationDuration: ''
-createdAt: 2025-12-15T21:25:29.496Z
+createdAt: 2026-02-02T19:26:45.110Z
 blockData:
-  top: -480
-  left: 64
-  uuid: 0c09190d-4264-4712-997e-cd033db1ee92
-  options: {}
-  pluginId: startTrigger
-  blockType: webhook
+  top: -928
+  left: 496
+  uuid: a125be98-0ce9-4904-a5dc-9bca66eb4d7f
+  pluginId: code2
+  blockType: code
   editorType: JavascriptQuery
-  isMinimized: false
   resourceName: JavascriptQuery
   incomingOnSuccessEdges: []
