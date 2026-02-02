@@ -1,2 +1,5 @@
 version: 1.0.0
 name: Manifest-Retool-cloud
+workflows:
+  - uuid: df2955c7-bad5-4f23-bbc5-6e69e2d37b8e
+    release: 0.0.6
