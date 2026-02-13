@@ -1,0 +1,116 @@
+id: response2
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  queryRefreshTime: ''
+  allowedGroupIds: []
+  streamResponse: false
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  query: |-
+    const generateReturn = () => {
+        const status = () => {
+          try {
+            return 500
+          } catch {
+            return 200
+          }
+        }
+      const body = () => {
+        try {
+          return {
+      "returncode": 500,
+      "status": "failure"
+    }
+        } catch {
+          return {'error': true, 'message': 'There was a problem parsing the JSON body of response2'}
+        }
+      }
+      return {status: status(), body: body() }
+      }
+      return generateReturn()
+      
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  data: null
+  importedQueryInputs: {}
+  _additionalScope: []
+  isImported: false
+  showSuccessToaster: true
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  metadata: null
+  editorMode: sql
+  queryRunTime: null
+  changesetObject: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  finished: null
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: null
+  watchedParams: []
+  enableErrorTransformer: false
+  showLatestVersionUpdatedWarning: false
+  timestamp: 0
+  evalType: script
+  importedQueryDefaults: {}
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  queryTimeout: '10000'
+  workflowId: null
+  requireConfirmation: false
+  queryFailureConditions: ''
+  changesetIsObject: false
+  enableCaching: false
+  allowedGroups: []
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2025-12-13T00:09:47.990Z
+blockData:
+  top: 192
+  left: 1280
+  uuid: 860ca6c4-8dc2-426b-83cd-4016565a7378
+  options:
+    body: |-
+      {
+        "returncode": 500,
+        "status": "failure"
+      }
+    status: '500'
+  pluginId: response2
+  blockType: webhookReturn
+  editorType: JavascriptQuery
+  isMinimized: false
+  resourceName: JavascriptQuery
+  incomingPorts: []
+  failureCondition: 'true'
+  incomingOnSuccessEdges: []

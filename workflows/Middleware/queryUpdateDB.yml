@@ -1,0 +1,106 @@
+id: queryUpdateDB
+type: datasource
+subtype: SqlQueryUnified
+resourceName: 3b39cc6e-d82d-48d8-818f-5433148daed9
+resourceDisplayName: retool_db
+template:
+  queryRefreshTime: ''
+  allowedGroupIds: []
+  streamResponse: false
+  records: ''
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  databasePasswordOverride: ''
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  query: ''
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  data: null
+  recordId: ''
+  importedQueryInputs: {}
+  _additionalScope: []
+  isImported: false
+  showSuccessToaster: true
+  dataArray: []
+  cacheKeyTtl: ''
+  filterBy: ''
+  requestSentTimestamp: null
+  databaseHostOverride: ''
+  metadata: null
+  editorMode: gui
+  queryRunTime: null
+  actionType: INSERT
+  changesetObject: '{{ startTrigger.data }}'
+  shouldUseLegacySql: false
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  finished: null
+  databaseNameOverride: ''
+  confirmationMessage: null
+  isFetching: false
+  changeset: '[{"key":"story_generated","value":"\"true\""}]'
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: null
+  watchedParams: []
+  enableErrorTransformer: false
+  databaseWarehouseOverride: ''
+  enableBulkUpdates: false
+  showLatestVersionUpdatedWarning: false
+  timestamp: 0
+  evalType: script
+  importedQueryDefaults: {}
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  overrideOrgCacheForUserCache: false
+  bulkUpdatePrimaryKey: ''
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  tableName: workflow_results
+  queryTimeout: '10000'
+  workflowId: null
+  requireConfirmation: false
+  queryFailureConditions: ''
+  changesetIsObject: true
+  enableCaching: false
+  allowedGroups: []
+  databaseUsernameOverride: ''
+  databaseRoleOverride: ''
+  shouldEnableBatchQuerying: false
+  doNotThrowOnNoOp: false
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2025-12-15T16:28:52.820Z
+blockData:
+  top: 16
+  left: 576
+  uuid: 255b2c28-f8b0-460f-a8f3-86de7392d7fc
+  pluginId: queryUpdateDB
+  blockType: default
+  dimensions:
+    width: 432
+    height: 352
+  editorType: SqlQueryUnified
+  resourceName: 3b39cc6e-d82d-48d8-818f-5433148daed9
+  incomingOnSuccessEdges:
+    - a0b4ed67-8dae-4628-ba76-ee0bce5d053f
