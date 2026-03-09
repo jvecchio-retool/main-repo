@@ -1,2 +1,5 @@
 version: 1.0.0
 name: newmani
+workflows:
+  - uuid: d0e0321c-c2cd-4b58-9242-695d2f3b43cb
+    release: latest
