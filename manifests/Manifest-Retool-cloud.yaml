@@ -1,0 +1,10 @@
+version: 1.0.0
+name: Manifest-Retool-cloud
+apps:
+  - uuid: 0a1116d6-1374-11f1-8642-076131e70f0c
+    release: latest
+workflows:
+  - uuid: d0e0321c-c2cd-4b58-9242-695d2f3b43cb
+    release: latest
+  - uuid: df2955c7-bad5-4f23-bbc5-6e69e2d37b8e
+    release: 0.0.6
