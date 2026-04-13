@@ -1,0 +1,1 @@
+SELECT * FROM fish_orders WHERE customer_email = {{ current_user.email }}

@@ -1,0 +1,14 @@
+{
+  "agentChat": {
+    "row": 1.2,
+    "col": 2,
+    "height": 23.8,
+    "width": 8
+  },
+  "text1": {
+    "row": 0.6,
+    "col": 2,
+    "height": 0.6,
+    "width": 8
+  }
+}

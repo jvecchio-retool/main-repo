@@ -1,0 +1,68 @@
+<Frame
+  id="$header"
+  enableFullBleed={null}
+  isHiddenOnDesktop={false}
+  isHiddenOnMobile={true}
+  padding="8px 12px"
+  sticky={true}
+  style={{ map: { "primary-surface": "rgba(41, 135, 206, 1)" } }}
+  type="header"
+>
+  <Navigation
+    id="navigationHeader"
+    appTargetByIndex=""
+    captionByIndex=""
+    data=""
+    disabledByIndex=""
+    hiddenByIndex=""
+    highlightByIndex=""
+    iconByIndex=""
+    iconPositionByIndex=""
+    itemMode="static"
+    itemTypeByIndex=""
+    keyByIndex=""
+    labels=""
+    parentKeyByIndex=""
+    persistUrlParamsByIndex=""
+    screenTargetByIndex=""
+    screenTargetIdByIndex=""
+    src="https://static.vecteezy.com/system/resources/previews/021/813/114/non_2x/fish-shop-logo-design-template-with-a-fish-icon-and-tote-bag-perfect-for-business-company-mobile-app-restaurant-etc-free-vector.jpg"
+    style={{}}
+    tooltipByIndex=""
+  >
+    <Option
+      id="00030"
+      icon="bold/food-fish"
+      iconPosition="left"
+      itemType="page"
+      label="Fish"
+      screenTargetId="page1"
+    />
+    <Option
+      id="00031"
+      icon="bold/interface-text-formatting-list-bullets"
+      iconPosition="left"
+      itemType="page"
+      label="Orders"
+      screenTargetId="page2"
+    />
+    <Option
+      id="00032"
+      icon="bold/interface-help-customer-support-2"
+      iconPosition="left"
+      itemType="page"
+      label="Help"
+      screenTargetId="page3"
+    />
+    <Event
+      id="mockEventHandlerId1"
+      event="click"
+      method="openPage"
+      params={{ map: { pageName: "{{ item.id }}" } }}
+      pluginId=""
+      type="util"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </Navigation>
+</Frame>
