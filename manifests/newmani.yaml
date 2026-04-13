@@ -3,6 +3,10 @@ name: newmani
 apps:
   - uuid: 0a1116d6-1374-11f1-8642-076131e70f0c
     release: latest
+  - uuid: 563b3e14-dacc-11f0-8220-3f88ed7b466f
+    release: latest
 workflows:
+  - uuid: a0cb6b6d-903e-44c3-80ca-5ff72411dc2e
+    release: latest
   - uuid: d0e0321c-c2cd-4b58-9242-695d2f3b43cb
     release: latest

@@ -1,0 +1,12 @@
+{
+  "customer": {
+    "firstName": {{ current_user.firstName }},
+    "lastName": {{ current_user.lastName }},
+    "email": {{ current_user.email }}
+  },
+  "orderItems": {{ cartItems.value.map(item => ({
+    fishName: item.common_name,
+    quantity: item.quantity,
+    fishId: item.id
+  })) }}
+}

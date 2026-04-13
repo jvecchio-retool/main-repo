@@ -1,0 +1,21 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "563b3e14-dacc-11f0-8220-3f88ed7b466f",
+  "appTemplate": {
+    "appMaxWidth": "100%",
+    "appThemeId": "custom",
+    "pageCodeFolders": {
+      "object": {
+        "page3": {
+          "array": []
+        },
+        "page2": {
+          "array": []
+        }
+      }
+    },
+    "rootScreen": "page1",
+    "version": "3.323.0"
+  }
+}
