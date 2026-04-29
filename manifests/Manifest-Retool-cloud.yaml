@@ -3,6 +3,8 @@ name: Manifest-Retool-cloud
 apps:
   - uuid: 0a1116d6-1374-11f1-8642-076131e70f0c
     release: latest
+  - uuid: 21b74bf6-441c-11f1-aead-07ee20beb6db
+    release: latest
   - uuid: 563b3e14-dacc-11f0-8220-3f88ed7b466f
     release: latest
   - uuid: f3bd7a4a-441b-11f1-a9dd-0ba342ff99a1
