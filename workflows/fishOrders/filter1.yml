@@ -1,4 +1,4 @@
-id: startTrigger
+id: filter1
 type: datasource
 subtype: JavascriptQuery
 resourceName: JavascriptQuery
@@ -21,48 +21,7 @@ template:
   runWhenModelUpdates: false
   workflowRunExecutionType: sync
   showFailureToaster: true
-  query: |2-
-
-      const evalStartTriggerBlock = () => {
-        const getExampleInputJSON = () => {
-          try {
-            return {
-      customer: {
-        firstName: "John",
-        lastName: "Doe", 
-        email: "john@example.com"
-      },
-      orderItems: [
-        { fishName: "Blue Tang", quantity: 2, fishId: 14 },
-        { fishName: "Clownfish", quantity: 1, fishId: 15 }
-      ]
-    }
-          } catch {
-            return { error: true, message: 'Error parsing example input JSON' }
-          }
-        }
-        const getExamplePathParams = () => {
-          try {
-            return {}
-          } catch {
-            return { error: true, message: 'Error parsing example path params' }
-          }
-        }
-        const getExampleHeaders = () => {
-          try {
-            return {}
-          } catch {
-            return { error: true, message: 'Error parsing example headers' }
-          }
-        }
-        return {
-          _retool_exampleInputJSON: getExampleInputJSON(),
-          _retool_exampleHeaders: getExampleHeaders(),
-          _retool_examplePathParams: getExamplePathParams(),
-        }
-      }
-      return evalStartTriggerBlock()
-      
+  query: ''
   playgroundQueryUuid: ''
   playgroundQueryId: null
   error: null
@@ -78,6 +37,7 @@ template:
   cacheKeyTtl: ''
   requestSentTimestamp: null
   metadata: null
+  editorMode: sql
   queryRunTime: null
   changesetObject: ''
   offlineOptimisticResponse: null
@@ -112,15 +72,17 @@ template:
   queryThrottleTime: '750'
   updateSetValueDynamically: false
   notificationDuration: ''
-createdAt: 2025-12-17T23:03:09.574Z
+createdAt: 2026-05-01T17:43:35.241Z
 blockData:
-  top: 48
-  left: 48
-  uuid: 408e9dc8-f0ca-40f5-926b-bbbd7c9f51c0
-  options: {}
-  pluginId: startTrigger
-  blockType: webhook
+  top: -256
+  left: 464
+  uuid: 858c1b1f-42b4-46c4-b89d-a3301652be6b
+  options:
+    filterStatement: ''
+  pluginId: filter1
+  blockType: filter
   editorType: JavascriptQuery
+  onboarding: false
   isMinimized: false
   resourceName: JavascriptQuery
   incomingOnSuccessEdges: []
