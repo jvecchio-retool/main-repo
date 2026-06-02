@@ -121,7 +121,7 @@ triggerWebhooks:
             properties:
               array: []
         useHeaderApiKey: false
-        exampleInputJSON: ''
+        exampleInputJSON: '{"value": "value"}'
         examplePathParams: ''
 version: 43.0.9
 workflowId: df2955c7-bad5-4f23-bbc5-6e69e2d37b8e
