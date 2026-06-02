@@ -21,7 +21,38 @@ template:
   runWhenModelUpdates: false
   workflowRunExecutionType: sync
   showFailureToaster: true
-  query: return null
+  query: |2-
+
+      const evalStartTriggerBlock = () => {
+        const getExampleInputJSON = () => {
+          try {
+            return {"value": "value"}
+          } catch {
+            return { error: true, message: 'Error parsing example input JSON' }
+          }
+        }
+        const getExamplePathParams = () => {
+          try {
+            return {}
+          } catch {
+            return { error: true, message: 'Error parsing example path params' }
+          }
+        }
+        const getExampleHeaders = () => {
+          try {
+            return {}
+          } catch {
+            return { error: true, message: 'Error parsing example headers' }
+          }
+        }
+        return {
+          _retool_exampleInputJSON: getExampleInputJSON(),
+          _retool_exampleHeaders: getExampleHeaders(),
+          _retool_examplePathParams: getExamplePathParams(),
+        }
+      }
+      return evalStartTriggerBlock()
+      
   playgroundQueryUuid: ''
   playgroundQueryId: null
   error: null

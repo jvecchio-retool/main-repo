@@ -1,3 +1,4 @@
+private: false
 customLibraries:
   array:
     - object:
@@ -120,10 +121,11 @@ triggerWebhooks:
             properties:
               array: []
         useHeaderApiKey: false
-        exampleInputJSON: ''
+        exampleInputJSON: '{"value": "value"}'
         examplePathParams: ''
 version: 43.0.9
 workflowId: df2955c7-bad5-4f23-bbc5-6e69e2d37b8e
 description: null
 workflowTemplate:
-  version: 3.333.0
+  appMaxWidth: 100%
+  version: 4.2.0
