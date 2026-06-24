@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "retool": {
+    "app": {
+      "uuid": "dd4b1520-5f72-11f1-8bef-7bf82ac14fb5",
+      "name": "Task Manager",
+      "resourceReferencesByFile": {
+        "/backend/todos/createTodo.ts": [
+          {
+            "name": "3b39cc6e-d82d-48d8-818f-5433148daed9",
+            "displayName": "retool_db",
+            "type": "retoolDb"
+          }
+        ],
+        "/backend/todos/deleteTodo.ts": [
+          {
+            "name": "3b39cc6e-d82d-48d8-818f-5433148daed9",
+            "displayName": "retool_db",
+            "type": "retoolDb"
+          }
+        ],
+        "/backend/todos/listTodos.ts": [
+          {
+            "name": "3b39cc6e-d82d-48d8-818f-5433148daed9",
+            "displayName": "retool_db",
+            "type": "retoolDb"
+          }
+        ],
+        "/backend/todos/toggleTodo.ts": [
+          {
+            "name": "3b39cc6e-d82d-48d8-818f-5433148daed9",
+            "displayName": "retool_db",
+            "type": "retoolDb"
+          }
+        ]
+      },
+      "appIdentifier": "task-manager"
+    }
+  }
+}
