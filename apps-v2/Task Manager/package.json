@@ -32,7 +32,8 @@
             "displayName": "retool_db",
             "type": "retoolDb"
           }
-        ]
+        ],
+        "/backend/user.d.ts": []
       },
       "appIdentifier": "task-manager"
     }
