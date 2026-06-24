@@ -93,18 +93,18 @@ export default function Calculator() {
   }
 
   const keyClass = 'h-14 text-lg font-medium'
-  const funcClass = `${keyClass} bg-blue-200 text-blue-900 hover:bg-blue-300 dark:bg-blue-800 dark:text-blue-50 dark:hover:bg-blue-700`
-  const numClass = `${keyClass} bg-blue-50 text-blue-900 border-blue-300 hover:bg-blue-100 dark:bg-blue-950 dark:text-blue-50 dark:border-blue-800 dark:hover:bg-blue-900`
-  const opClass = `${keyClass} bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-400`
+  const funcClass = `${keyClass} bg-green-200 text-green-900 hover:bg-green-300 dark:bg-green-800 dark:text-green-50 dark:hover:bg-green-700`
+  const numClass = `${keyClass} bg-green-50 text-green-900 border-green-300 hover:bg-green-100 dark:bg-green-950 dark:text-green-50 dark:border-green-800 dark:hover:bg-green-900`
+  const opClass = `${keyClass} bg-green-600 text-white hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-400`
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-50 dark:bg-blue-950 p-4">
-      <Card className="w-full max-w-xs p-4 shadow-retool-lg bg-blue-100 border-blue-300 dark:bg-blue-900 dark:border-blue-700">
+    <div className="min-h-screen flex items-center justify-center bg-green-50 dark:bg-green-950 p-4">
+      <Card className="w-full max-w-xs p-4 shadow-retool-lg bg-green-100 border-green-300 dark:bg-green-900 dark:border-green-700">
         <div className="flex justify-end mb-2">
           <DarkModeToggle />
         </div>
         <div
-          className="mb-4 rounded-md bg-blue-900 text-blue-50 dark:bg-blue-950 dark:text-blue-100 px-4 py-5 text-right text-4xl font-semibold tabular-nums tracking-tight overflow-hidden"
+          className="mb-4 rounded-md bg-green-900 text-green-50 dark:bg-green-950 dark:text-green-100 px-4 py-5 text-right text-4xl font-semibold tabular-nums tracking-tight overflow-hidden"
           aria-live="polite"
         >
           {display}
