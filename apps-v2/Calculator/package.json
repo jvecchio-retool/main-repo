@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "retool": {
+    "app": {
+      "uuid": "1bd5cd76-6a77-11f1-9322-d3874cc70979",
+      "name": "Calculator",
+      "resourceReferencesByFile": {},
+      "appIdentifier": "untitled"
+    }
+  }
+}
