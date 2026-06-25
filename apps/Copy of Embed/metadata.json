@@ -3,6 +3,7 @@
   "version": "43.0.9",
   "pageUuid": "ff0cabb6-c0f2-11f0-aba1-d7ba16826316",
   "appTemplate": {
+    "appMaxWidth": "100%",
     "pageCodeFolders": {
       "object": {
         "page1": {
@@ -14,7 +15,6 @@
       }
     },
     "rootScreen": "page1",
-    "version": "3.283.0",
-    "experimentalDataTabEnabled": true
+    "version": "4.14.0"
   }
 }
